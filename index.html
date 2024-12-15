@@ -3,69 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lokesh's Professional Portfolio">
     <title>Lokesh's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #BB86FC;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #3700B3;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #1F1F1F;
+            border-bottom: 2px solid #BB86FC;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #1F1F1F;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #BB86FC;
+            display: inline-block;
+        }
+
+        .social-links a {
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .project {
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #1F1F1F;
+            border-top: 2px solid #BB86FC;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
-<body class="dark-theme">
+<body>
     <header>
-        <h1>Lokesh</h1>
-        <h2>AI-ML and Software Engineering Enthusiast</h2>
+        <h1>Lokesh's Portfolio</h1>
+        <p>Welcome to my personal website!</p>
     </header>
 
-    <main>
-        <section id="about-me">
+    <div class="container">
+        <section id="about">
             <h2>About Me</h2>
-            <p>🏫 I am a dedicated student of Artificial Intelligence and Data Science at Sri Sairam Engineering College in Chennai, India.</p>
-            <p>💪 Passionate about programming and building efficient software solutions.</p>
-            <p>🌱 Currently focusing on advanced Python, Data Structures and Algorithms in C, and problem-solving in C.</p>
-            <p>🖥️ I primarily work with Windows 11 (WSL) and Debian Linux environments.</p>
+            <p>Hello! I'm Lokesh, a passionate developer and aspiring data scientist. I enjoy building software, solving problems, and learning new technologies. Check out my projects below!</p>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
-            <ul>
-                <li><a href="https://github.com/L0KESHprograms/Iris-Flower-Classification" target="_blank">
-                    <i class="fas fa-flask"></i> Iris Flower Classification</a>  
-                    <p>
-                        A machine learning project that classifies iris flowers into three species 
-                        based on sepal and petal measurements. Models like SVM, KNN, and Decision Trees are used 
-                        to optimize classification accuracy.
-                    </p>
-                </li>
-                <li><a href="https://github.com/L0KESHprograms/Smart-Life" target="_blank">
-                    <i class="fas fa-traffic-light"></i> Smart Life</a>  
-                    <p>
-                        A smart emergency traffic management system leveraging the LoRaWAN protocol, 
-                        Arduino hardware, and real-time map-based routing for ambulance drivers. Built with HTML, 
-                        CSS, JavaScript, and Firebase for the backend.
-                    </p>
-                </li>
-                <li><a href="https://github.com/L0KESHprograms/WikiScraper" target="_blank">
-                    <i class="fas fa-code"></i> WikiScraper</a>  
-                    <p>
-                        A Python-based web scraper that extracts and organizes information from Wikipedia. 
-                        Utilizes libraries like Beautiful Soup and Requests to fetch structured data for further analysis.
-                    </p>
-                </li>
-            </ul>
+            <div class="project">
+                <h3>WikiScraper</h3>
+                <p>A web scraping project that extracts information from Wikipedia.</p>
+                <a href="https://github.com/L0KESHprograms/WikiScraper" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Smart Life</h3>
+                <p>A Smart Emergency Traffic Management System leveraging LoRaWAN protocol for better emergency responses.</p>
+                <a href="https://github.com/L0KESHprograms" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>Currently pursuing a degree in Artificial Intelligence and Data Science. I've worked on various projects in machine learning and software development, showcasing my skills in Python, C, and problem-solving.</p>
         </section>
 
         <section id="contact">
-            <h2>Contact Me</h2>
-            <ul class="contact-list">
-                <li><i class="fas fa-envelope"></i> <a href="mailto:lokeshofficial2212@gmail.com">lokeshofficial2212@gmail.com</a></li>
-                <li><i class="fab fa-github"></i> <a href="https://github.com/L0KESHprograms" target="_blank">GitHub</a></li>
-                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
-                <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/" target="_blank">Twitter</a></li>
-            </ul>
+            <h2>Contact</h2>
+            <p>Let's connect! Find me on:</p>
+            <div class="social-links">
+                <a href="https://github.com/L0KESHprograms" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/lokesh" target="_blank">LinkedIn</a>
+                <a href="mailto:lokeshofficial2212@gmail.com">Email</a>
+            </div>
         </section>
-    </main>
+    </div>
 
     <footer>
-        <p>© 2024 Lokesh | Built with HTML & CSS</p>
+        <p>&copy; 2024 Lokesh. All rights reserved.</p>
     </footer>
 </body>
 </html>
