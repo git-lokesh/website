@@ -1,6 +1,4 @@
-/* styles.css */
-
-/* Reset and General Settings */
+/* Reset and Base */
 * {
     margin: 0;
     padding: 0;
@@ -8,106 +6,117 @@
   }
   
   body {
-    font-family: 'Roboto', Arial, sans-serif;
-    background: linear-gradient(to bottom, #2f2f2f, #1f1f1f);
-    color: #fff;
+    font-family: 'Courier New', monospace;
+    background: #0d0d0d;
+    color: #00ff00;
     line-height: 1.6;
     padding-bottom: 2rem;
   }
   
   a {
-    color: #00FFCC;
+    color: #00ff00;
     text-decoration: none;
     transition: color 0.3s ease;
   }
-  
   a:hover {
-    color: #FF00CC;
+    color: #33ff33;
   }
   
   header {
     text-align: center;
     padding: 3rem 1rem;
-    background-color: #1f1f1f;
-    border-bottom: 2px solid #00FFCC;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    background-color: #000;
+    border-bottom: 2px solid #00ff00;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.4);
   }
-  
   header h1 {
     font-size: 3rem;
-    color: #00FFCC;
     margin-bottom: 0.5rem;
   }
-  
   header p {
     font-size: 1.2rem;
-    color: #aaa;
+    color: #77ff77;
   }
   
-  .container {
+  /* Stack Layout */
+  .stack {
     width: 90%;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 2rem auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
   }
   
   .card {
-    background: #2a2a2a;
-    border-radius: 10px;
+    background: #111;
+    border: 1px solid #00ff00;
+    border-radius: 12px;
     padding: 1.5rem;
-    box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
   .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 30px rgba(0, 255, 204, 0.6);
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.6);
   }
   
   h2 {
     font-size: 2rem;
-    color: #00FFCC;
     margin-bottom: 1rem;
+    color: #00ff00;
+  }
+  h3 {
+    font-size: 1.3rem;
+    color: #33ff33;
   }
   
   .project,
   .organization {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
   
-  .project h3,
-  .organization h3 {
-    font-size: 1.5rem;
-    color: #ff6600;
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
   
   .social-links a {
     display: inline-block;
-    margin-right: 1rem;
-    background-color: #333;
-    padding: 8px 15px;
-    border: 2px solid #00FFCC;
+    background-color: #000;
+    padding: 0.6rem 1rem;
+    border: 1px solid #00ff00;
     border-radius: 5px;
-    color: #fff;
     font-weight: bold;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    color: #00ff00;
+    transition: all 0.3s ease;
   }
-  
   .social-links a:hover {
-    background-color: #00FFCC;
-    border-color: #ff00cc;
+    background-color: #00ff00;
     color: #000;
   }
   
   footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #1f1f1f;
-    border-top: 2px solid #00FFCC;
+    background-color: #000;
+    border-top: 2px solid #00ff00;
+    color: #33ff33;
     font-size: 0.9rem;
-    color: #bbb;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -4px 6px rgba(0, 255, 0, 0.3);
+  }
+  
+  /* Mobile */
+  @media (max-width: 600px) {
+    .social-links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .social-links a {
+      width: 100%;
+      text-align: center;
+    }
   }
   
