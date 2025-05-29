@@ -30,7 +30,7 @@
       <div class="organization">
         <h3>Intern at Vulture Lines Tech</h3>
         <p>Developed a Data Analytics Dashboard with Streamlit. Designed a support management system with data visualizations.</p>
-        <a href="https://www.vulturelines.com/" target="_blank">Vulture Lines</a>
+        <a href="https://www.vulturelines.com/" class="github-link" target="_blank">Vulture Lines</a>
       </div>
     </section>
 
@@ -40,36 +40,42 @@
       <div class="project">
         <h3>WikiScraper</h3>
         <p>Developed a web scraper using BeautifulSoup and requests packages in Python. Extracts links, paragraphs, and tables from any Wikipedia page and stores them in different files.</p>
-        <a href="https://github.com/git-lokesh/WikiScraper.git" target="_blank">View on GitHub</a>
+        <a href="https://github.com/git-lokesh/WikiScraper.git" class="github-link" target="_blank">View on GitHub</a>
       </div>
 
       <div class="project">
         <h3>Support Management Dashboard</h3>
         <p>Created an interactive Streamlit dashboard for customer support ticket analysis. Processed 2,000+ tickets using Pandas and visualized data with Matplotlib. Helped improve response efficiency by 20%.</p>
-        <a href="https://github.com/git-lokesh/support-management.git" target="_blank">View on GitHub</a>
+        <a href="https://github.com/git-lokesh/support-management.git" class="github-link" target="_blank">View on GitHub</a>
       </div>
 
       <div class="project">
         <h3>Iris Flower Classification</h3>
         <p>Built a machine learning model in Python to classify iris flowers into three species. Achieved 96% accuracy using Support Vector Machine (SVM).</p>
-        <a href="https://github.com/git-lokesh/IrisFlowerClassification.git" target="_blank">View on GitHub</a>
+        <a href="https://github.com/git-lokesh/IrisFlowerClassification.git" class="github-link" target="_blank">View on GitHub</a>
       </div>
 
       <div class="project">
         <h3>Personal Portfolio</h3>
         <p>Designed a dark-themed, fully responsive portfolio using HTML and CSS. Showcased 3+ projects and personal experiences. You are looking at that page right now!</p>
-        <a href="https://github.com/git-lokesh/website.git" target="_blank">View on GitHub</a>
+        <a href="https://github.com/git-lokesh/website.git" class="github-link" target="_blank">View on GitHub</a>
       </div>
-    </section>
 
+      <div class="project">
+        <h3>ACO PathFinder</h3>
+        <p>Built a smart routing system using the Ant Colony Optimization (ACO) algorithm in Python. Solves shortest path problems for water pipeline and city road networks (Chennai) with real-time visualization.</p>
+        <a href="https://github.com/git-lokesh/SmartRouting.git" class="github-link" target="_blank">View on GitHub</a>
+      </div>
+
+    </section>
 
     <section class="card" id="contact">
       <h2>Contact</h2>
-      <p>Let's connect! Find me on:</p>
+      <p>Let's connect! Contact me via:</p>
       <div class="social-links">
-        <a href="https://github.com/git-lokesh" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/lokesh-d-191266258" target="_blank">LinkedIn</a>
         <a href="mailto:lokeshofficial2212@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/lokesh-d-191266258" target="_blank">LinkedIn</a>
+        <a href="https://github.com/git-lokesh" target="_blank">GitHub</a>
       </div>
     </section>
   </main>
@@ -77,5 +83,22 @@
   <footer>
     <p>&copy; You are at the bottom of the page now ;)</p>
   </footer>
+
+  <script>
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      const colors = ['#ff3030', '#00bfff']; // red or blue
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      card.style.boxShadow = `0 0 30px ${randomColor}`;
+      card.style.transform = 'translateY(-5px)';
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.boxShadow = '0 0 20px rgba(0, 255, 0, 0.3)';
+      card.style.transform = 'translateY(0)';
+    });
+  });
+</script>
+
 </body>
 </html>
