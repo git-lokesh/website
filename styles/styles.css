@@ -49,7 +49,6 @@
     color: #77ff77;
   }
   
-  /* Stack Layout */
   .stack {
     width: 90%;
     max-width: 900px;
@@ -70,15 +69,15 @@
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 30px rgba(0, 255, 0, 0.6); /* base green glow */
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.6); 
 }
 
 .card:nth-child(odd):hover {
-  box-shadow: 0 0 30px #ff3030; /* red shadow glow */
+  box-shadow: 0 0 30px #ff3030; 
 }
 
 .card:nth-child(even):hover {
-  box-shadow: 0 0 30px #00bfff; /* blue shadow glow */
+  box-shadow: 0 0 30px #00bfff; 
 }
 
   
@@ -118,7 +117,7 @@
     color: #000;
   }
   
-  .github-link {
+  .external-link {
     position: relative;
     color: #00ff00;
     text-decoration: none;
@@ -126,7 +125,7 @@
     transition: color 0.3s ease;
   }
 
-  .github-link::after {
+  .external-link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -137,12 +136,12 @@
     transition: background 0.3s ease;
   }
 
-  .github-link:hover::after {
-    background: #ff3030; /* Matrix red */
+  .external-link:hover::after {
+    background: #ff3030; 
   }
 
-  .github-link:active::after {
-    background: #00bfff; /* Matrix blue */
+  .external-link:active::after {
+    background: #00bfff; 
   }
   
   .social-links a[href^="mailto"]:hover,
