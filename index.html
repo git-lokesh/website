@@ -5,117 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lokesh D - Software Developer & Data Analyst</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Lokesh D</h1>
-            <p>Software Developer | Data Analyst</p>
-        </div>
-    </header>
-
-    <main class="container">
-        <section id="about" class="card">
-            <h2>About Me</h2>
-            <p>
-                I'm Lokesh, a passionate software developer and data analyst from Chennai, India. I enjoy building efficient software and working with data to solve real-world problems. I'm always exploring new technologies and looking for opportunities to grow my skills and contribute to impactful projects.
-            </p>
-        </section>
-
-        <section id="experience" class="card">
-            <h2>Experience</h2>
-            <div class="job">
-                <h3>Vulture Lines Tech Management Pvt. Ltd.</h3>
-                <p class="job-title">Data Analyst Intern</p>
+    <div class="portfolio-container">
+        <header class="left-pane">
+            <div>
+                <h1 class="main-heading">Lokesh D</h1>
+                <h2 class="sub-heading">Software Developer & Data Analyst</h2>
+                <p class="bio">
+                    A Chennai-based developer focused on data-driven solutions and building efficient, scalable software.
+                </p>
+            </div>
+            <nav class="main-nav">
                 <ul>
-                    <li>Developed a Support Management Dashboard by analyzing 2,000+ tickets to improve resolution time by 20%.</li>
-                    <li>Designed a Data Analytics Dashboard to track key business metrics using interactive visualizations.</li>
-                    <li>Built a Dashboard using Streamlit to display the data in a user-friendly way and enhance accessibility and data presentation.</li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
-            </div>
-        </section>
-
-        <section id="projects" class="card">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project">
-                    <h3>WikiScraper</h3>
-                    <p>A web scraper built with Python, BeautifulSoup, and requests to extract and store data from Wikipedia pages.</p>
-                    <a href="https://github.com/git-lokesh/WikiScraper.git" target="_blank">View on GitHub</a>
-                </div>
-                <div class="project">
-                    <h3>Support Management Dashboard</h3>
-                    <p>An interactive Streamlit dashboard for analyzing customer support tickets, featuring data processing with Pandas and visualizations with Matplotlib.</p>
-                    <a href="https://github.com/git-lokesh/support-management.git" target="_blank">View on GitHub</a>
-                </div>
-                <div class="project">
-                    <h3>Personal Portfolio</h3>
-                    <p>A responsive personal portfolio website built with HTML and CSS to showcase my projects and skills.</p>
-                    <a href="https://github.com/git-lokesh/website.git" target="_blank">View on GitHub</a>
-                </div>
-                <div class="project">
-                    <h3>ACO PathFinder</h3>
-                    <p>A smart routing system that uses the Ant Colony Optimization algorithm to find the shortest paths in networks.</p>
-                    <a href="https://github.com/git-lokesh/SmartRouting.git" target="_blank">View on GitHub</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="card">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>C</li>
-                        <li>HTML</li>
-                        <li>Bash</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
-                    <ul>
-                        <li>Git & GitHub</li>
-                        <li>Visual Studio Code</li>
-                        <li>MS Excel</li>
-                        <li>Linux (Debian/Fedora)</li>
-                        <li>Anaconda</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Interests</h3>
-                    <ul>
-                        <li>Data Analytics</li>
-                        <li>Data Visualization</li>
-                        <li>Bash Scripting</li>
-                        <li>Open-Source</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="card">
-            <h2>Education</h2>
-            <p><strong>B.Tech in Artificial Intelligence and Data Science</strong></p>
-            <p>Sri Sairam Engineering College, Chennai (2022-2026)</p>
-        </section>
-
-        <section id="contact" class="card">
-            <h2>Contact</h2>
-            <p>Let's connect! You can reach me via:</p>
+            </nav>
             <div class="social-links">
-                <a href="mailto:lokeshofficial2212@gmail.com">Email</a>
-                <a href="https://www.linkedin.com/in/lokesh-d-191266258" target="_blank">LinkedIn</a>
                 <a href="https://github.com/git-lokesh" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/lokesh-d-191266258" target="_blank">LinkedIn</a>
+                <a href="mailto:lokeshofficial2212@gmail.com">Email</a>
             </div>
-        </section>
-    </main>
+        </header>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Lokesh D</p>
-        </div>
-    </footer>
+        <main class="right-pane">
+            <section id="about">
+                <p>
+                    I specialize in transforming complex problems into elegant software solutions. My expertise lies in Python, C, and data analysis, where I leverage tools like Pandas and Streamlit to build impactful applications. I am passionate about optimizing performance and writing clean, maintainable code. Currently seeking opportunities to contribute to challenging projects in software development and data science.
+                </p>
+            </section>
+
+            <section id="experience">
+                <h3 class="section-title">Experience</h3>
+                <div class="card">
+                    <h4>Data Analyst Intern</h4>
+                    <h5>Vulture Lines Tech</h5>
+                    <p class="job-duration">Internship</p>
+                    <ul>
+                        <li>Developed a support management dashboard analyzing 2,000+ tickets, improving resolution efficiency by 20%.</li>
+                        <li>Designed and built interactive data visualizations using Streamlit and Matplotlib to track key business metrics.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h3 class="section-title">Projects</h3>
+                <div class="project-card">
+                    <h4>ACO PathFinder</h4>
+                    <p>A smart routing system using the Ant Colony Optimization algorithm to find shortest paths in networks. Built with Python and integrated with OpenStreetMap data.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/git-lokesh/SmartRouting.git" target="_blank">View Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4>Support Management Dashboard</h4>
+                    <p>An interactive Streamlit dashboard for customer support ticket analysis, featuring data processing with Pandas and visualizations with Matplotlib.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/git-lokesh/support-management.git" target="_blank">View Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4>WikiScraper</h4>
+                    <p>A web scraper developed using Python and BeautifulSoup to extract and organize data from any Wikipedia page into structured files.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/git-lokesh/WikiScraper.git" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </section>
+            
+            <footer>
+                <p>Built with HTML & CSS. Hosted on GitHub Pages.</p>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>
