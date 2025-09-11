@@ -1,12 +1,12 @@
 :root {
-    /* Retro Color Palette */
-    --background-color: #000080;    /* Navy Blue */
-    --text-color: #00ff00;          /* Neon Green */
-    --primary-accent: #ffff00;      /* Bright Yellow */
-    --secondary-accent: #ff00ff;    /* Fuchsia */
-    --border-color: #00ffff;        /* Aqua */
-    --link-color: #00ffff;
-    --link-hover-color: #ff00ff;
+    /* Softer Retro Color Palette */
+    --background-color: #1b1f3b;      /* Deep Navy */
+    --text-color: #e0f2f1;            /* Soft Mint */
+    --primary-accent: #ffd166;        /* Warm Muted Yellow */
+    --secondary-accent: #ef476f;      /* Coral Red */
+    --border-color: #06d6a0;          /* Teal Green */
+    --link-color: #118ab2;            /* Medium Blue */
+    --link-hover-color: #073b4c;      /* Dark Teal */
 
     /* Retro Fonts */
     --font-pixel: 'Press Start 2P', cursive;
@@ -30,7 +30,7 @@ body {
     color: var(--text-color);
     font-size: 1.1em;
     line-height: 1.5;
-    text-shadow: 1px 1px 0 #000; /* Old CRT look */
+    text-shadow: 1px 1px 0 #000;
 }
 
 /* Global Links */
@@ -41,7 +41,7 @@ a {
 }
 a:hover {
     color: var(--link-hover-color);
-    text-shadow: 2px 2px 5px var(--link-hover-color);
+    text-shadow: 2px 2px 5px var(--primary-accent);
 }
 
 .highlight {
@@ -60,7 +60,7 @@ a:hover {
     font-size: 0.8em;
     border: 2px outset var(--border-color);
     margin-bottom: 1rem;
-    box-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+    box-shadow: 0 0 10px rgba(239, 71, 111, 0.6);
 }
 .bottom-banner {
     margin-top: 1rem;
@@ -72,9 +72,9 @@ a:hover {
     max-width: 1200px;
     margin: 1rem auto;
     padding: 10px;
-    background-color: #00004d; /* Darker navy */
+    background-color: #10132a;
     border: 5px solid var(--border-color);
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(6, 214, 160, 0.3);
 }
 
 .content-area {
@@ -88,9 +88,9 @@ a:hover {
     flex: 0 0 220px;
     padding: 1rem;
     text-align: center;
-    background-color: #000033; /* Darker */
+    background-color: #0d0f23;
     border: 2px groove var(--primary-accent);
-    box-shadow: inset 0 0 8px rgba(255, 255, 0, 0.5);
+    box-shadow: inset 0 0 8px rgba(255, 209, 102, 0.4);
 }
 
 .profile-box {
@@ -99,11 +99,15 @@ a:hover {
     border-bottom: 2px dashed var(--text-color);
 }
 .profile-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
     border: 3px solid var(--border-color);
     border-radius: 50%;
     margin-bottom: 0.8rem;
     box-shadow: 0 0 8px var(--border-color);
 }
+
 .profile-box h2 {
     font-family: var(--font-pixel);
     font-size: 1.2em;
@@ -127,7 +131,7 @@ a:hover {
     font-size: 0.9em;
     color: var(--text-color);
     text-shadow: 1px 1px 0 #000;
-    border-bottom: 1px dotted var(--slate);
+    border-bottom: 1px dotted var(--border-color);
 }
 .main-nav .nav-link:hover {
     background-color: var(--primary-accent);
@@ -137,9 +141,9 @@ a:hover {
 
 /* Ads & Counter */
 .retro-ad {
-    background-color: #cc00cc;
-    color: #00ff00;
-    border: 2px solid #ff00ff;
+    background-color: var(--secondary-accent);
+    color: var(--text-color);
+    border: 2px solid var(--primary-accent);
     padding: 0.5rem;
     margin-top: 1.5rem;
     font-family: var(--font-pixel);
@@ -168,16 +172,16 @@ a:hover {
     font-size: 0.8em;
 }
 .hit-counter span {
-    color: #ff0000; /* Red numbers */
+    color: var(--secondary-accent);
 }
 
 /* Main Content */
 .main-content {
     flex-grow: 1;
     padding: 1.5rem;
-    background-color: #000066;
+    background-color: #15193a;
     border: 3px inset var(--border-color);
-    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.5);
+    box-shadow: inset 0 0 10px rgba(6, 214, 160, 0.3);
     overflow-y: auto;
 }
 
@@ -204,7 +208,7 @@ a:hover {
 .hero-section h1 {
     font-family: var(--font-pixel);
     font-size: 2.2em;
-    color: var(--link-hover-color);
+    color: var(--secondary-accent);
     margin-bottom: 0.5rem;
     text-shadow: 3px 3px 0 #000;
 }
@@ -223,15 +227,15 @@ a:hover {
     color: #000;
     font-family: var(--font-pixel);
     font-size: 0.9em;
-    border: 2px outset #ffcc00;
-    box-shadow: 4px 4px 0 #880;
+    border: 2px outset #e6b84c;
+    box-shadow: 4px 4px 0 #8a6f2e;
     cursor: pointer;
     text-shadow: none;
     transition: all 0.1s ease;
 }
 .button-8bit:hover {
-    background-color: #ffcc00;
-    box-shadow: 2px 2px 0 #880;
+    background-color: #f4c542;
+    box-shadow: 2px 2px 0 #8a6f2e;
     transform: translate(2px, 2px);
 }
 
@@ -258,9 +262,9 @@ a:hover {
 .content-box {
     padding: 1.5rem;
     margin-bottom: 2rem;
-    background-color: #000033;
+    background-color: #0f122c;
     border: 2px dashed var(--text-color);
-    box-shadow: inset 0 0 5px rgba(0, 255, 0, 0.5);
+    box-shadow: inset 0 0 5px rgba(224, 242, 241, 0.3);
 }
 .section-title {
     font-family: var(--font-pixel);
@@ -276,17 +280,17 @@ a:hover {
 .project-card {
     padding: 1rem;
     margin-bottom: 1rem;
-    background-color: #00004d;
+    background-color: #1a1e40;
     border: 1px dotted var(--primary-accent);
     transition: background-color 0.2s ease;
 }
 .project-card:hover {
-    background-color: #000066;
+    background-color: #222754;
 }
 .project-card h4 {
     font-family: var(--font-pixel);
     font-size: 1em;
-    color: var(--link-hover-color);
+    color: var(--secondary-accent);
     margin-bottom: 0.5rem;
 }
 .project-links {
@@ -324,8 +328,8 @@ a:hover {
     to   { transform: rotate(0deg); }
 }
 @keyframes pulse {
-    0%   { box-shadow: 0 0 5px rgba(255, 0, 255, 0.7); }
-    100% { box-shadow: 0 0 15px rgba(255, 0, 255, 0.9); }
+    0%   { box-shadow: 0 0 5px rgba(239, 71, 111, 0.4); }
+    100% { box-shadow: 0 0 15px rgba(239, 71, 111, 0.8); }
 }
 
 /* Responsive */
