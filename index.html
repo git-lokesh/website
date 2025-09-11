@@ -1,104 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>lokesh.com</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>::LOKESH.COM:: Home Page</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Hello, I'm LOKESH!</h1>
-    <p>Software Developer & Data Science Enthusiast</p>
-  </header>
+    <div class="website-container">
+        <header class="top-banner">
+            <marquee behavior="alternate" scrollamount="5">WELCOME TO LOKESH'S PAGE</marquee>
+        </header>
 
-  <main class="stack">
-    <section class="card" id="about">
-      <h2>About Me</h2>
-      <p>
-        I specialize in problem-solving and efficient software development. My toolkit includes languages like Python, C, and cutting-edge AI tools. Passionate about emerging technologies and seeking impactful work opportunities.
-      </p>
-    </section>
+        <div class="content-area">
+            <aside class="left-sidebar">
+                <div class="profile-box">
+                    <img src="assets/space.jpg" alt="Lokesh's Profile Pic" class="profile-pic" />
+                    <h2>LOKESH D</h2>
+                    <p>Python Developer & Data Analyst</p>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#about" class="nav-link">About Me</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.youtube.com/watch?v=zLPj9q9an0g" target="_blank" rel="noopener noreferrer" class="ad-link">
+                    <img src="assets/ad.jpeg" alt="Random Ad" class="ad-image" />
+                </a>
+                <div class="hit-counter">
+                    <p>Visitors: <span>[0000042]</span></p>
+                </div>
+            </aside>
 
-    <section class="card" id="education">
-      <h2>Education</h2>
-      <p>Currently pursuing a degree in Artificial Intelligence and Data Science, with experience in machine learning and software development.</p>
-    </section>
+            <main class="main-content">
+                <section id="hero" class="hero-section">
+                    <div class="hero-text">
+                        <p class="blink-text"> > Hello, World! < </p>
+                        <h1>I'm Lokesh</h1>
+                        <h2>I like coding, data analysis, and building stuff and working with computers.</h2>
+                        <a href="#projects" class="button-8bit">See My Projects</a>
+                    </div>
+                    <div class="spinning-elements">
+                        <img src="assets/car.jpeg" alt="Supercar" class="spinner" id="globe-spinner">
+                        <img src="assets/spiderman.jpeg" alt="Spinning Spiderman" class="spinner" id="cog-spinner">
+                    </div>
+                </section>
 
-    <section class="card" id="work">
-      <h2>Experience</h2>
-      <div class="organization">
-        <h3>Intern at Vulture Lines Tech</h3>
-        <p>Developed a Data Analytics Dashboard with Streamlit. Designed a support management system with data visualizations.</p>
-        <a href="https://www.vulturelines.com/" class="external-link" target="_blank">Vulture Lines</a>
-      </div>
-    </section>
+                <section id="about" class="content-box">
+                    <h3 class="section-title">About Me</h3>
+                    <p>
+                        Hi, I'm Lokesh from Chennai. I work with <span class="highlight">Python</span> and <span class="highlight">data analysis</span>. 
+                        I enjoy building small tools, scraping data, and trying out new ideas for fun.
+                    </p>
+                </section>
 
-    <section class="card" id="projects">
-      <h2>Projects</h2>
+                <section id="projects" class="content-box">
+                    <h3 class="section-title">Projects</h3>
+                   
+                    <div class="project-card">
+                        <h4>Support Management Dashboard</h4>
+                        <p>A Streamlit app for real-time ticket analysis, using Pandas and Matplotlib.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/git-lokesh/support-management.git" target="_blank" class="button-8bit">Source Code</a>
+                        </div>
+                    </div>
 
-      <div class="project">
-        <h3>WikiScraper</h3>
-        <p>Developed a web scraper using BeautifulSoup and requests packages in Python. Extracts links, paragraphs, and tables from any Wikipedia page and stores them in different files.</p>
-        <a href="https://github.com/git-lokesh/WikiScraper.git" class="external-link" target="_blank">View on GitHub</a>
-      </div>
+                    <div class="project-card">
+                        <h4>Smart Routing Algorithm</h4>
+                        <p>Route optimization with Ant Colony Optimization Algorithm in Python.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/git-lokesh/SmartRouting.git" target="_blank" class="button-8bit">Source Code</a>
+                        </div>
+                    </div>
 
-      <div class="project">
-        <h3>Support Management Dashboard</h3>
-        <p>Created an interactive Streamlit dashboard for customer support ticket analysis. Processed 2,000+ tickets using Pandas and visualized data with Matplotlib. Helped improve response efficiency by 20%.</p>
-        <a href="https://github.com/git-lokesh/support-management.git" class="external-link" target="_blank">View on GitHub</a>
-      </div>
+                    <div class="project-card">
+                        <h4>WikiScraper</h4>
+                        <p>A Python + BeautifulSoup tool to scrape text, links, and tables from Wikipedia.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/git-lokesh/WikiScraper.git" target="_blank" class="button-8bit">Source Code</a>
+                        </div>
+                    </div>
+                </section>
 
-      <div class="project">
-        <h3>Iris Flower Classification</h3>
-        <p>Built a machine learning model in Python to classify iris flowers into three species. Achieved 96% accuracy using Support Vector Machine (SVM).</p>
-        <a href="https://github.com/git-lokesh/IrisFlowerClassification.git" class="external-link" target="_blank">View on GitHub</a>
-      </div>
+                <section id="contact" class="content-box">
+                    <h3 class="section-title">Contact</h3>
+                    <p class="contact-message">
+                        Want to collaborate or just say hi? Here are my links:
+                    </p>
+                    <div class="contact-buttons">
+                        <a href="mailto:lokeshofficial2212@gmail.com" class="button-8bit">Email</a>
+                        <a href="https://github.com/git-lokesh" target="_blank" class="button-8bit">GitHub</a>
+                        <a href="https://www.linkedin.com/in/lokesh-d-191266258" target="_blank" class="button-8bit">LinkedIn</a>
+                    </div>
+                </section>
+            </main>
+        </div>
 
-      <div class="project">
-        <h3>Personal Portfolio</h3>
-        <p>Designed a dark-themed, fully responsive portfolio using HTML and CSS. Showcased 3+ projects and personal experiences. You are looking at that page right now!</p>
-        <a href="https://github.com/git-lokesh/website.git" class="external-link" target="_blank">View on GitHub</a>
-      </div>
-
-      <div class="project">
-        <h3>ACO PathFinder</h3>
-        <p>Built a smart routing system using the Ant Colony Optimization (ACO) algorithm in Python. Solves shortest path problems for water pipeline and city road networks (Chennai) with real-time visualization.</p>
-        <a href="https://github.com/git-lokesh/SmartRouting.git" class="external-link" target="_blank">View on GitHub</a>
-      </div>
-
-    </section>
-
-    <section class="card" id="contact">
-      <h2>Contact</h2>
-      <p>Let's connect! Contact me via:</p>
-      <div class="social-links">
-        <a href="mailto:lokeshofficial2212@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/lokesh-d-191266258" target="_blank">LinkedIn</a>
-        <a href="https://github.com/git-lokesh" target="_blank">GitHub</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; You are at the bottom of the page now ;)</p>
-  </footer>
-
-  <script>
-  document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('mouseenter', () => {
-      const colors = ['#ff3030', '#00bfff']; 
-      const randomColor = colors[Math.floor(Math.random() * colors.length)];
-      card.style.boxShadow = `0 0 30px ${randomColor}`;
-      card.style.transform = 'translateY(-5px)';
-    });
-
-    card.addEventListener('mouseleave', () => {
-      card.style.boxShadow = '0 0 20px rgba(0, 255, 0, 0.3)';
-      card.style.transform = 'translateY(0)';
-    });
-  });
-</script>
-
+        <footer class="bottom-banner">
+            <p>&copy; Lokesh — Built with HTML & CSS</p>
+        </footer>
+    </div>
 </body>
 </html>
