@@ -1,10 +1,10 @@
 :root {
     /* Retro Color Palette */
-    --background-color: #000080; /* Navy Blue */
-    --text-color: #00ff00;       /* Neon Green */
-    --primary-accent: #ffff00;   /* Bright Yellow */
-    --secondary-accent: #ff00ff; /* Fuchsia */
-    --border-color: #00ffff;     /* Aqua */
+    --background-color: #000080;    /* Navy Blue */
+    --text-color: #00ff00;          /* Neon Green */
+    --primary-accent: #ffff00;      /* Bright Yellow */
+    --secondary-accent: #ff00ff;    /* Fuchsia */
+    --border-color: #00ffff;        /* Aqua */
     --link-color: #00ffff;
     --link-hover-color: #ff00ff;
 
@@ -13,6 +13,7 @@
     --font-mono: 'VT323', monospace;
 }
 
+/* Reset & Base */
 * {
     margin: 0;
     padding: 0;
@@ -27,9 +28,9 @@ body {
     font-family: var(--font-mono);
     background-color: var(--background-color);
     color: var(--text-color);
-    line-height: 1.5;
     font-size: 1.1em;
-    text-shadow: 1px 1px 0 #000; /* For that old CRT look */
+    line-height: 1.5;
+    text-shadow: 1px 1px 0 #000; /* Old CRT look */
 }
 
 /* Global Links */
@@ -38,7 +39,6 @@ a {
     text-decoration: none;
     transition: color 0.1s linear, text-shadow 0.1s linear;
 }
-
 a:hover {
     color: var(--link-hover-color);
     text-shadow: 2px 2px 5px var(--link-hover-color);
@@ -49,8 +49,9 @@ a:hover {
     font-weight: bold;
 }
 
-/* Top and Bottom Banners */
-.top-banner, .bottom-banner {
+/* Top & Bottom Banners */
+.top-banner,
+.bottom-banner {
     background-color: var(--secondary-accent);
     color: var(--primary-accent);
     padding: 0.5rem 1rem;
@@ -61,20 +62,19 @@ a:hover {
     margin-bottom: 1rem;
     box-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
 }
-
 .bottom-banner {
     margin-top: 1rem;
     margin-bottom: 0;
 }
 
-/* Main Website Container */
+/* Website Container */
 .website-container {
     max-width: 1200px;
     margin: 1rem auto;
-    border: 5px solid var(--border-color);
-    background-color: #00004d; /* Darker navy for main content area */
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
     padding: 10px;
+    background-color: #00004d; /* Darker navy */
+    border: 5px solid var(--border-color);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
 }
 
 .content-area {
@@ -83,46 +83,43 @@ a:hover {
     padding: 1rem;
 }
 
-/* Left Sidebar */
+/* Sidebar */
 .left-sidebar {
     flex: 0 0 220px;
-    background-color: #000033; /* Even darker blue */
-    border: 2px groove var(--primary-accent);
     padding: 1rem;
     text-align: center;
+    background-color: #000033; /* Darker */
+    border: 2px groove var(--primary-accent);
     box-shadow: inset 0 0 8px rgba(255, 255, 0, 0.5);
 }
 
 .profile-box {
     margin-bottom: 2rem;
-    border-bottom: 2px dashed var(--text-color);
     padding-bottom: 1rem;
+    border-bottom: 2px dashed var(--text-color);
 }
-
 .profile-pic {
     border: 3px solid var(--border-color);
     border-radius: 50%;
     margin-bottom: 0.8rem;
     box-shadow: 0 0 8px var(--border-color);
 }
-
 .profile-box h2 {
     font-family: var(--font-pixel);
     font-size: 1.2em;
     color: var(--primary-accent);
     margin-bottom: 0.5rem;
 }
-
 .profile-box p {
     font-size: 0.9em;
     color: var(--link-color);
 }
 
+/* Navigation */
 .main-nav ul {
     list-style: none;
     margin-bottom: 2rem;
 }
-
 .main-nav .nav-link {
     display: block;
     padding: 0.6rem 0;
@@ -132,15 +129,15 @@ a:hover {
     text-shadow: 1px 1px 0 #000;
     border-bottom: 1px dotted var(--slate);
 }
-
 .main-nav .nav-link:hover {
     background-color: var(--primary-accent);
     color: #000;
     text-shadow: none;
 }
 
+/* Ads & Counter */
 .retro-ad {
-    background-color: #cc00cc; /* Purple */
+    background-color: #cc00cc;
     color: #00ff00;
     border: 2px solid #ff00ff;
     padding: 0.5rem;
@@ -149,43 +146,39 @@ a:hover {
     font-size: 0.7em;
     animation: pulse 1.5s infinite alternate;
 }
-
 .blinky {
     width: 88px;
     height: 31px;
-    display: block;
     margin: 10px auto 0;
+    display: block;
     border: 1px solid #000;
 }
-
 .blinky-small {
-    height: 16px; /* Standard size for 90s small blinkies */
-    vertical-align: middle;
+    height: 16px;
     margin-left: 5px;
+    vertical-align: middle;
 }
-
 .hit-counter {
+    margin-top: 1.5rem;
+    padding: 0.5rem;
     background-color: #000;
     color: var(--primary-accent);
     border: 1px solid var(--text-color);
-    padding: 0.5rem;
-    margin-top: 1.5rem;
     font-family: var(--font-pixel);
     font-size: 0.8em;
 }
-
 .hit-counter span {
     color: #ff0000; /* Red numbers */
 }
 
-/* Main Content Area */
+/* Main Content */
 .main-content {
     flex-grow: 1;
-    background-color: #000066; /* Medium blue */
-    border: 3px inset var(--border-color);
     padding: 1.5rem;
-    overflow-y: auto; /* Enable scrolling for content */
+    background-color: #000066;
+    border: 3px inset var(--border-color);
     box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.5);
+    overflow-y: auto;
 }
 
 /* Hero Section */
@@ -193,16 +186,14 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 300px; /* Give it some height */
+    min-height: 300px;
+    padding-bottom: 1.5rem;
     margin-bottom: 2rem;
     border-bottom: 2px dashed var(--primary-accent);
-    padding-bottom: 1.5rem;
 }
-
 .hero-text {
     max-width: 60%;
 }
-
 .blink-text {
     font-family: var(--font-pixel);
     font-size: 0.9em;
@@ -210,12 +201,6 @@ a:hover {
     margin-bottom: 1rem;
     animation: blink 1s step-end infinite;
 }
-
-@keyframes blink {
-    from, to { opacity: 1; }
-    50% { opacity: 0; }
-}
-
 .hero-section h1 {
     font-family: var(--font-pixel);
     font-size: 2.2em;
@@ -223,7 +208,6 @@ a:hover {
     margin-bottom: 0.5rem;
     text-shadow: 3px 3px 0 #000;
 }
-
 .hero-section h2 {
     font-family: var(--font-pixel);
     font-size: 1.2em;
@@ -231,6 +215,7 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
+/* Buttons */
 .button-8bit {
     display: inline-block;
     padding: 8px 16px;
@@ -238,33 +223,30 @@ a:hover {
     color: #000;
     font-family: var(--font-pixel);
     font-size: 0.9em;
-    border: 2px outset #ffcc00; /* Yellow-orange border */
-    text-shadow: none;
+    border: 2px outset #ffcc00;
+    box-shadow: 4px 4px 0 #880;
     cursor: pointer;
-    box-shadow: 4px 4px 0 #880; /* Pixelated shadow */
+    text-shadow: none;
     transition: all 0.1s ease;
 }
-
 .button-8bit:hover {
     background-color: #ffcc00;
     box-shadow: 2px 2px 0 #880;
     transform: translate(2px, 2px);
 }
 
+/* Spinning Easter Eggs */
 .spinning-elements {
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
 }
-
 .spinner {
-    width: 60px; /* Adjust size of spinners */
+    width: 60px;
     height: 60px;
-    animation: spin 3s linear infinite; /* All spinners spin */
+    animation: spin 3s linear infinite;
 }
-
-/* Unique spin speeds/directions */
 #globe-spinner {
     animation: spin 5s linear infinite;
 }
@@ -272,103 +254,79 @@ a:hover {
     animation: spin-reverse 2s linear infinite;
 }
 
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-@keyframes spin-reverse {
-    from { transform: rotate(360deg); }
-    to { transform: rotate(0deg); }
-}
-
-/* Content Boxes (Sections) */
+/* Sections */
 .content-box {
-    background-color: #000033;
-    border: 2px dashed var(--text-color);
     padding: 1.5rem;
     margin-bottom: 2rem;
+    background-color: #000033;
+    border: 2px dashed var(--text-color);
     box-shadow: inset 0 0 5px rgba(0, 255, 0, 0.5);
 }
-
 .section-title {
     font-family: var(--font-pixel);
     font-size: 1.3em;
     color: var(--primary-accent);
     margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
     text-shadow: 2px 2px 0 #000;
     border-bottom: 1px dotted var(--text-color);
-    padding-bottom: 0.5rem;
 }
 
-.job-entry {
-    margin-bottom: 1.5rem;
-}
-
-.job-entry h4 {
-    font-family: var(--font-pixel);
-    font-size: 1.1em;
-    color: var(--link-color);
-}
-
-.job-entry h5 {
-    font-size: 0.9em;
-    color: var(--text-color);
-    margin-bottom: 0.5rem;
-}
-
-.job-duration {
-    font-style: italic;
-    font-size: 0.8em;
-    color: var(--slate);
-    margin-bottom: 1rem;
-}
-
-.job-entry ul {
-    list-style-type: square;
-    margin-left: 1.5rem;
-    color: var(--text-color);
-}
-
-.job-entry ul li {
-    margin-bottom: 0.5rem;
-}
-
-/* Project Cards */
+/* Projects */
 .project-card {
-    background-color: #00004d;
-    border: 1px dotted var(--primary-accent);
     padding: 1rem;
     margin-bottom: 1rem;
+    background-color: #00004d;
+    border: 1px dotted var(--primary-accent);
     transition: background-color 0.2s ease;
 }
-
 .project-card:hover {
     background-color: #000066;
 }
-
 .project-card h4 {
     font-family: var(--font-pixel);
     font-size: 1em;
     color: var(--link-hover-color);
     margin-bottom: 0.5rem;
 }
-
 .project-links {
     margin-top: 1rem;
     text-align: right;
 }
 
+/* Contact */
 .contact-message {
     margin-bottom: 1.5rem;
 }
-
-
-/* Animations */
-@keyframes pulse {
-    0% { box-shadow: 0 0 5px rgba(255, 0, 255, 0.7); }
-    100% { box-shadow: 0 0 15px rgba(255, 0, 255, 0.9); }
+.contact-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.contact-buttons .button-8bit {
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
 }
 
+/* Animations */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+@keyframes spin-reverse {
+    from { transform: rotate(360deg); }
+    to   { transform: rotate(0deg); }
+}
+@keyframes pulse {
+    0%   { box-shadow: 0 0 5px rgba(255, 0, 255, 0.7); }
+    100% { box-shadow: 0 0 15px rgba(255, 0, 255, 0.9); }
+}
 
 /* Responsive */
 @media (max-width: 900px) {
@@ -376,25 +334,22 @@ a:hover {
         flex-direction: column;
     }
     .left-sidebar {
-        flex: auto;
         width: 100%;
-        text-align: center;
         padding: 1rem;
-    }
-    .profile-box, .main-nav ul {
-        border-bottom: none;
-        padding-bottom: 0;
+        text-align: center;
+        flex: auto;
     }
     .main-nav ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 0.5rem;
+        margin-bottom: 0;
     }
     .main-nav .nav-link {
+        padding: 0.5rem 0.8rem;
         border-bottom: none;
         display: inline-block;
-        padding: 0.5rem 0.8rem;
     }
     .hero-section {
         flex-direction: column;
@@ -419,11 +374,9 @@ a:hover {
     body {
         font-size: 1em;
     }
-    .top-banner, .bottom-banner {
+    .top-banner,
+    .bottom-banner {
         font-size: 0.7em;
-    }
-    .main-heading {
-        font-size: 1.8em;
     }
     .hero-section h1 {
         font-size: 1.5em;
