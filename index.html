@@ -1,107 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lokesh.web</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>lokesh.website</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
-    <div class="website-container">
-        <header class="top-banner">
-            <marquee behavior="alternate" scrollamount="5">WELCOME TO LOKESH'S PAGE</marquee>
-        </header>
+  <div class="page">
 
-        <div class="content-area">
-            <aside class="left-sidebar">
-                <div class="profile-box">
-                    <img src="assets/space.jpg" alt="Lokesh's Profile Pic" class="profile-pic" />
-                    <h2>LOKESH D</h2>
-                    <p>Python Developer & Data Analyst</p>
-                </div>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="#about" class="nav-link">About Me</a></li>
-                        <li><a href="#projects" class="nav-link">Projects</a></li>
-                        <li><a href="#contact" class="nav-link">Contact</a></li>
-                    </ul>
-                </nav>
-                <a href="https://www.youtube.com/watch?v=zLPj9q9an0g" target="_blank" rel="noopener noreferrer" class="ad-link">
-                    <img src="assets/ad.jpeg" alt="Random Ad" class="ad-image" />
-                </a>
-                <div class="hit-counter">
-                    <p>Visitors: <span>[0000042]</span></p>
-                </div>
-            </aside>
-
-            <main class="main-content">
-                <section id="hero" class="hero-section">
-                    <div class="hero-text">
-                        <p class="blink-text"> > Hello, World! < </p>
-                        <h1>I'm Lokesh</h1>
-                        <h2>I like coding, data analysis, and building stuff and working with computers.</h2>
-                        <a href="#projects" class="button-8bit">See My Projects</a>
-                    </div>
-                    <div class="spinning-elements">
-                        <img src="assets/car.jpeg" alt="Supercar" class="spinner" id="globe-spinner">
-                        <img src="assets/spiderman.jpeg" alt="Spinning Spiderman" class="spinner" id="cog-spinner">
-                    </div>
-                </section>
-
-                <section id="about" class="content-box">
-                    <h3 class="section-title">About Me</h3>
-                    <p>
-                        Hi, I'm Lokesh from Chennai. I work with <span class="highlight">Python</span> and <span class="highlight">data analysis</span>. 
-                        I enjoy building small tools, scraping data, and trying out new ideas for fun.
-                    </p>
-                </section>
-
-                <section id="projects" class="content-box">
-                    <h3 class="section-title">Projects</h3>
-                   
-                    <div class="project-card">
-                        <h4>Support Management Dashboard</h4>
-                        <p>A Streamlit app for real-time ticket analysis, using Pandas and Matplotlib.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/git-lokesh/support-management.git" target="_blank" class="button-8bit">Source Code</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h4>Smart Routing Algorithm</h4>
-                        <p>Route optimization with Ant Colony Optimization Algorithm in Python.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/git-lokesh/SmartRouting.git" target="_blank" class="button-8bit">Source Code</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h4>WikiScraper</h4>
-                        <p>A Python + BeautifulSoup tool to scrape text, links, and tables from Wikipedia.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/git-lokesh/WikiScraper.git" target="_blank" class="button-8bit">Source Code</a>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="contact" class="content-box">
-                    <h3 class="section-title">Contact</h3>
-                    <p class="contact-message">
-                        Want to collaborate or just say hi? Here are my links:
-                    </p>
-                    <div class="contact-buttons">
-                        <a href="mailto:lokeshofficial2212@gmail.com" class="button-8bit">Email</a>
-                        <a href="https://github.com/git-lokesh" target="_blank" class="button-8bit">GitHub</a>
-                        <a href="https://www.linkedin.com/in/lokesh-d-191266258" target="_blank" class="button-8bit">LinkedIn</a>
-                    </div>
-                </section>
-            </main>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"> 😁</span>
+        <div class="brand-text">
+          <span class="brand-name">Lokesh </span>
+          <span class="brand-role">Python · Data · Automation</span>
         </div>
+      </div>
 
-        <footer class="bottom-banner">
-            <p>&copy; Lokesh — Built with HTML & CSS</p>
-        </footer>
-    </div>
+      <nav class="nav">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- HERO -->
+      <section id="hero" class="hero">
+        <div class="hero-text">
+          <p class="hero-tag">Computer Science & Data Science</p>
+          <h1 class="hero-title">Hi — I'm Lokesh.</h1>
+          <p class="hero-subtitle">
+            I build dashboards, offline AI tools, and automated systems that turn ideas into software.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-ghost">Contact</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <h2 class="section-title">About</h2>
+        <div class="section-content">
+          <p>
+            Computer Science and Data Science student with a passion for turning data into real-world solutions.
+            Experienced in building dashboards and automating workflows. Skilled in Python, C, and SQL, with strong
+            interest in data analysis and problem-solving. Looking to grow as a Data Analyst or Software Engineer.
+          </p>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+
+          <!-- PDF RAG -->
+          <article class="project-card">
+            <h3 class="project-title">PDF-RAG Chat</h3>
+            <p class="project-tech">Python · Streamlit · Ollama · FAISS · PyPDF2</p>
+            <ul class="project-points">
+              <li>Offline PDF RAG system with FAISS embeddings + local Llama 3.1 (8B).</li>
+              <li>Clean Streamlit UI with PDF upload & conversational querying.</li>
+            </ul>
+            <a href="https://github.com/git-lokesh/RAG_pdf.git" target="_blank" class="btn btn-secondary">View on GitHub</a>
+          </article>
+
+          <!-- WIKISCRAPER -->
+          <article class="project-card">
+            <h3 class="project-title">WikiScraper</h3>
+            <p class="project-tech">Python · BeautifulSoup · Requests · Pandas</p>
+            <ul class="project-points">
+              <li>Scraper for links, paragraphs, and tables from Wikipedia.</li>
+              <li>Exports cleaned data to CSV & JSON using pandas.</li>
+            </ul>
+            <a href="https://github.com/git-lokesh/WikiScraper.git" target="_blank" class="btn btn-secondary">View on GitHub</a>
+          </article>
+
+          <!-- DASHBOARD -->
+          <article class="project-card">
+            <h3 class="project-title">Support Management Dashboard</h3>
+            <p class="project-tech">Python · Pandas · Matplotlib · Streamlit</p>
+            <ul class="project-points">
+              <li>Real-time analytics for 2,000+ support tickets.</li>
+              <li>Visualized trends, categories & SLA compliance.</li>
+            </ul>
+            <a href="https://github.com/git-lokesh/support-management.git" target="_blank" class="btn btn-secondary">View on GitHub</a>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="section-content contact-content">
+          <p>Open for collaborations, internships, and project work.</p>
+
+          <div class="contact-grid">
+
+            <a href="mailto:lokeshofficial2212@gmail.com" class="contact-card">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">lokeshofficial2212@gmail.com</span>
+            </a>
+
+            <a href="https://github.com/git-lokesh" target="_blank" class="contact-card">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">@git-lokesh</span>
+            </a>
+
+            <!-- X centered on desktop -->
+            <a href="https://x.com/_L0KESH" target="_blank" class="contact-card contact-x">
+              <span class="contact-label">X</span>
+              <span class="contact-value">@_L0KESH</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/lokesh-d-191266258" target="_blank" class="contact-card">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">Lokesh D</span>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Lokesh D · Built with HTML &amp; CSS</p>
+    </footer>
+
+  </div>
 </body>
 </html>
