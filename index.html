@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>lokesh.website</title>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles/styles.css">
@@ -38,7 +41,7 @@
       <section id="hero" class="hero">
         <div class="hero-text">
           <p class="hero-tag">Python Developer · Data Analyst</p>
-          <h1 class="hero-title">Hi!   I'm Lokesh.</h1>
+          <h1 class="hero-title">Hi! I'm Lokesh.</h1>
           <p class="hero-subtitle">
             I work on data systems, automation, and applied AI tools.
           </p>
@@ -68,15 +71,17 @@
 
         <div class="projects-grid">
 
-          <!-- PDF RAG -->
+          <!-- LOCAL PDF RAG -->
           <article class="project-card">
-            <h3 class="project-title">PDF-RAG Chat</h3>
-            <p class="project-tech">Python · Streamlit · Ollama · FAISS · PyPDF2</p>
+            <h3 class="project-title">Local PDF RAG Chat</h3>
+            <p class="project-tech">Python · Streamlit · Ollama · FAISS · Llama 3.1</p>
             <ul class="project-points">
-              <li>Offline PDF RAG system with FAISS embeddings + local Llama 3.1 (8B).</li>
-              <li>Clean Streamlit UI with PDF upload & conversational querying.</li>
+              <li>Offline Retrieval-Augmented Generation system to chat with PDF documents.</li>
+              <li>Uses FAISS embeddings and local Llama 3.1 (8B) with a chat-style Streamlit interface.</li>
             </ul>
-            <a href="https://github.com/git-lokesh/RAG_pdf.git" target="_blank" class="btn btn-secondary">View on GitHub</a>
+            <a href="https://github.com/git-lokesh/RAG_pdf.git" target="_blank" class="btn btn-secondary">
+              View on GitHub
+            </a>
           </article>
 
           <!-- WIKISCRAPER -->
@@ -87,7 +92,8 @@
               <li>Scraper for links, paragraphs, and tables from Wikipedia.</li>
               <li>Exports cleaned data to CSV & JSON using pandas.</li>
             </ul>
-            <a href="https://github.com/git-lokesh/WikiScraper.git" target="_blank" class="btn btn-secondary">View on GitHub</a>
+            <a href="https://github.com/git-lokesh/WikiScraper.git" target="_blank" class="btn btn-secondary">View on
+              GitHub</a>
           </article>
 
           <!-- DASHBOARD -->
@@ -98,8 +104,24 @@
               <li>Real-time analytics for 2,000+ support tickets.</li>
               <li>Visualized trends, categories & SLA compliance.</li>
             </ul>
-            <a href="https://github.com/git-lokesh/support-management.git" target="_blank" class="btn btn-secondary">View on GitHub</a>
+            <a href="https://github.com/git-lokesh/support-management.git" target="_blank"
+              class="btn btn-secondary">View on GitHub</a>
           </article>
+
+          <!-- STOCK TIME SERIES -->
+          <article class="project-card">
+            <h3 class="project-title">Stock Price Time Series Analysis & Forecasting</h3>
+            <p class="project-tech">Python · Streamlit · Pandas · Statsmodels · pmdarima · Matplotlib</p>
+            <ul class="project-points">
+              <li>Streamlit dashboard for analyzing and forecasting stock prices using classical time series techniques.</li>
+              <li>Includes stationarity testing (ADF), decomposition, and forecasting with Moving Average, ARIMA, and SARIMA models.</li>
+            </ul>
+            <a href="https://github.com/git-lokesh/stock_app.git" target="_blank" class="btn btn-secondary">
+              View on GitHub
+            </a>
+          </article>
+
+          
 
         </div>
       </section>
@@ -146,4 +168,5 @@
 
   </div>
 </body>
+
 </html>
